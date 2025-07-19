@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barober: Privacy Policy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 2rem;
+            }
+        }
+        .btn-primary-custom {
+            background-color: #085faf; /* Primary blue from logo */
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px; /* Full rounded */
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+        .btn-primary-custom:hover {
+            background-color: #064a8a; /* Darker blue for hover */
+            color: white;
+        }
+        .btn-blue-custom { /* Used for "Become a Partner" */
+            background-color: #085faf; /* Primary blue from logo */
+            color: white;
+            padding: 0.5rem 1.25rem; /* Adjusted padding for smaller button */
+            border-radius: 9999px; /* Full rounded */
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 0.875rem; /* text-sm equivalent */
+            border: none;
+        }
+        .btn-blue-custom:hover {
+            background-color: #064a8a; /* Darker blue for hover */
+            color: white;
+        }
+        .text-primary-blue {
+            color: #085faf;
+        }
+        .bg-light-blue {
+            background-color: #e0f2f7; /* Lighter shade of blue for icon backgrounds */
+        }
+        .partner-hero {
+            /* Added gradient back on top of the image */
+            background-image: linear-gradient(to right,  rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('privacy00.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 10rem 0;
+            text-align: center;
+        }
+        .call-to-action-gradient {
+            background-image: linear-gradient(to right, rgba(8, 95, 174, 0.8), rgba(10, 164, 197, 0.8));
+        }
+        .card, .interactive-item {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card:hover, .interactive-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        /* Removed .image-text-section as it's no longer needed for the full-width layout */
+        /* New styles for the image card section */
+        .partner-image-card {
+            background-color: #ffffff; /* White background for the card */
+            padding: 2rem; /* Reduced padding to fit card style */
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 0.75rem; /* More rounded corners for card */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Stronger shadow for card effect */
+            overflow: hidden; /* Ensures image corners are rounded with card */
+            display: flex; /* Use flex for image/text layout */
+            flex-direction: column; /* Stack on small screens */
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            .partner-image-card {
+                flex-direction: row; /* Side-by-side on larger screens */
+                padding: 0; /* Remove padding from parent to let cols handle it */
+            }
+            .partner-image-card .col-md-6:first-child {
+                padding-right: 1rem; /* Add some spacing between image and text */
+            }
+            .partner-image-card .col-md-6:last-child {
+                padding-left: 1rem; /* Add some spacing between image and text */
+            }
+        }
+        .partner-image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem; /* Rounded corners for image */
+            object-fit: cover; /* Ensure image covers space */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .partner-image-card .content-wrapper {
+            padding: 2rem; /* Padding inside the content column */
+        }
+
+        /* Styles for the full-width "Join Now" section */
+        .join-now-full-width {
+            padding: 0; /* Remove default padding from the section */
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .join-now-full-width .row {
+            margin: 0; /* Remove default row margins */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added transition */
+        }
+        .join-now-full-width .row:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25); /* More pronounced shadow on hover */
+        }
+        .join-now-full-width .col-md-6 {
+            padding: 0; /* Remove default column padding */
+        }
+        .join-now-full-width .content-area {
+            padding: 4rem 2rem; /* Add specific padding for content */
+            background-color: #ffffff; /* White background for content area */
+            border-radius: 0 0.75rem 0.75rem 0; /* Rounded corners for the right side on desktop */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            height: 100%; /* Ensure content area takes full height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertically center content */
+        }
+        .join-now-full-width img {
+            border-radius: 0.75rem 0 0 0.75rem; /* Rounded corners for the left side on desktop */
+        }
+
+        @media (max-width: 767.98px) {
+            .join-now-full-width .content-area {
+                border-radius: 0.75rem; /* Rounded corners for the whole card on mobile */
+                margin-top: 1rem; /* Space between image and text on mobile */
+            }
+            .join-now-full-width img {
+                border-radius: 0.75rem; /* Rounded corners for the whole image on mobile */
+            }
+        }
+
+        /* Custom style for larger phone numbers */
+        .large-phone-number {
+            font-size: 1.8rem; /* Larger font size */
+            font-weight: 700; /* Ensure it's bold */
+            color: #ffffff; /* Changed to white */
+            margin-bottom: 0.5rem; /* Add some space below each number */
+            transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Added transition */
+        }
+        .large-phone-number:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+            text-shadow: 0 0 10px rgba(255,255,255,0.8); /* Subtle glow effect */
+        }
+        @media (min-width: 768px) {
+            .large-phone-number {
+                font-size: 2.2rem; /* Even larger on desktop */
+            }
+        }
+
+        /* Creative section styles */
+        .creative-section {
+            background-color: #f0f8ff; /* Light blue background */
+            padding: 4rem 1rem;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        .creative-section h2 {
+            color: #085faf;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+        }
+        .creative-item {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .creative-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        .creative-item .icon-wrapper {
+            background-color: #085faf;
+            color: white;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .creative-item h3 {
+            color: #085faf;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .creative-item p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* New App Download Section Styles */
+        .app-download-section {
+            padding: 0; /* Remove default padding */
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            background-image: linear-gradient(to right, rgba(8, 95, 174, 0.9), rgba(10, 164, 197, 0.9)); /* Gradient background */
+            color: white;
+            border-radius: 0.75rem; /* Rounded corners for the section */
+            overflow: hidden; /* Ensures content respects border-radius */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        .app-download-section .row {
+            margin: 0; /* Remove default row margins */
+        }
+        .app-download-section .col-md-6 {
+            padding: 0; /* Remove default column padding */
+        }
+        .app-download-section .image-column {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem; /* Padding around the image */
+        }
+        .app-download-section .image-column img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px; /* Limit image height */
+            object-fit: contain;
+            animation: float-animation 3s ease-in-out infinite; /* Apply float animation */
+        }
+        .app-download-section .content-column {
+            padding: 4rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .app-download-section h2 {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        .app-download-section .btn-disabled-custom {
+            background-color: #fff;
+            color: #085faf;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0.75;
+            cursor: not-allowed;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .app-download-section .btn-disabled-custom:hover {
+            background-color: #fff;
+            color: #085faf;
+        }
+
+        /* Style for the new select menu */
+        .language-select {
+            border: 1px solid #ced4da;
+            border-radius: 0.5rem;
+            padding: 0.375rem 0.75rem;
+            font-size: 0.875rem;
+            height: calc(1.5em + 0.75rem + 2px); /* Match Bootstrap button height */
+            background-color: #085faf; /* Match button background */
+            color: white;
+            cursor: pointer;
+            appearance: none; /* Remove default arrow */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"); /* Custom arrow */
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 16px 12px;
+        }
+        .language-select:focus {
+            border-color: #064a8a;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(8, 95, 174, 0.25);
+        }
+        .language-select option {
+            background-color: #085faf; /* Option background */
+            color: white;
+        }
+
+        /* Footer links styling */
+        .footer-links-section {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            text-align: center;
+        }
+        .footer-links-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem; /* Space between links */
+        }
+        .footer-links-section ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        .footer-links-section ul li a:hover {
+            color: #d1e7dd; /* Lighter color on hover */
+            text-decoration: underline;
+        }
+        /* Terms and Conditions specific styles (reused for Privacy Policy) */
+        .policy-content { /* Generic class for policy pages */
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: left; /* Align text left for readability */
+        }
+        .policy-content h3 {
+            color: #085faf;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .policy-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .policy-content ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .policy-content ol {
+            list-style-type: decimal;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm py-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- Image Logo -->
+                <img src="barober_logo.jpg" alt="Barober Logo" class="me-2" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-700 hover:text-primary-blue font-weight-medium" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-700 hover:text-primary-blue font-weight-medium" href="index.html#how-it-works">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-700 hover:text-primary-blue font-weight-medium" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-700 hover:text-primary-blue font-weight-medium" href="index.html#why-choose-us">Why Choose Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-700 hover:text-primary-blue font-weight-medium" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-4 mt-2 mt-lg-0">
+                        <a href="partner.html" class="btn btn-blue-custom">Become a Partner</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Privacy Policy Hero Section -->
+    <section class="partner-hero">
+        <div class="container">
+            <h1 class="display-4 font-weight-bold mb-4">Barober: Privacy Policy</h1>
+            <p class="lead">Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.</p>
+        </div>
+    </section>
+
+    <!-- Creative Section: Key Aspects of Privacy -->
+    <section class="creative-section">
+        <h2 class="text-3xl md:text-4xl">Our Commitment to Your Privacy</h2>
+        <div class="row g-4 justify-content-center px-3 px-md-5">
+            <div class="col-md-4">
+                <div class="creative-item">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Data Protection</h3>
+                    <p>We employ strict security measures to protect your personal information.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="creative-item">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h3>Information We Collect</h3>
+                    <p>We collect personal information when you register or book a service through our app.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="creative-item">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>No Data Sharing for Marketing</h3>
+                    <p>We do not sell or share your personal data with any third parties for advertising or promotional purposes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Privacy Policy Content -->
+    <section class="container policy-content">
+        <h2 class="text-primary-blue mb-4">1. Information We Collect</h2>
+        <p>We collect the following personal information when you register or book a service through our app:</p>
+        <ul>
+            <li>Full Name</li>
+            <li>Email Address</li>
+            <li>Phone Number</li>
+            <li>Location (used for assigning the nearest available barber)</li>
+        </ul>
+
+        <h2 class="text-primary-blue mb-4">2. Payment Information</h2>
+        <p>All payments are securely processed via Razorpay, a trusted third-party payment gateway. We do not collect or store your credit/debit card information.</p>
+
+        <h2 class="text-primary-blue mb-4">3. How We Use Your Information</h2>
+        <p>Your information is used for the following purposes:</p>
+        <ul>
+            <li>Booking and managing services</li>
+            <li>Assigning barbers based on your location</li>
+            <li>Sending confirmations, alerts, and updates</li>
+            <li>Customer support and feedback</li>
+            <li>Service improvements</li>
+        </ul>
+
+        <h2 class="text-primary-blue mb-4">4. Sharing of Information</h2>
+        <p>We share limited information with the assigned barber only during the service period to facilitate smooth delivery:</p>
+        <ul>
+            <li>Location (for navigation)</li>
+            <li>Phone Number (for direct communication)</li>
+        </ul>
+        <p>Once the service is completed, this data is no longer accessible to the barber.</p>
+
+        <h2 class="text-primary-blue mb-4">5. Data Security</h2>
+        <p>We employ strict security measures to protect your personal information. While we follow best practices, no method of transmission or storage is completely secure.</p>
+
+        <h2 class="text-primary-blue mb-4">6. No Data Sharing for Marketing</h2>
+        <p>We do not sell or share your personal data with any third parties for advertising or promotional purposes.</p>
+
+        <h2 class="text-primary-blue mb-4">7. Your Rights</h2>
+        <p>You may:</p>
+        <ul>
+            <li>Request to view the data we hold</li>
+            <li>Ask for corrections to your information</li>
+            <li>Request deletion of your data (where legally applicable)</li>
+        </ul>
+        <p>To make such requests, contact us using the details below.</p>
+
+        <h2 class="text-primary-blue mb-4">8. Contact Us</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy or your data, please reach out to us:<br>📧 Email: support@barober.com<br>📞 Phone: 9454850113, 8808537003</p>
+
+        <h2 class="text-primary-blue mb-4">9. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Significant changes will be communicated via the app or email.</p>
+    </section>
+
+    <!-- Footer (Consistent with main site) -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <div class="footer-links-section">
+                <ul>
+                    <li><a href="privacy.html" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a></li>
+                    <li><a href="refund.html" data-en="Refund Policy" data-hi="वापसी नीति">Refund Policy</a></li>
+                    <li><a href="terms.html" data-en="Terms and Conditions" data-hi="नियम और शर्तें">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <p class="mb-1" data-en="&copy; 2025 Barober. All rights reserved." data-hi="© 2025 बारोबर। सर्वाधिकार सुरक्षित।">&copy; 2025 Barober. All rights reserved.</p>
+            <p class="text-sm mt-2" data-en="Made with ❤️ by Barober Team" data-hi="बारोबर टीम द्वारा ❤️ से निर्मित">Made with ❤️ by Barober Team</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
